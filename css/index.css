@@ -1,0 +1,103 @@
+ul,li{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+p{
+    margin:0;
+    padding:0
+}
+#weather-about{
+    background-color:rgba(0,0,0,0.8);
+    width:100%;
+    padding:1rem;
+    height:150px;
+}
+.weather-future{
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    align-content: center;
+}
+.week-box{
+    display:flex;
+    flex-flow: column;
+    align-items:center;
+}
+.week-box:not(:nth-last-child(1)){
+}
+
+.week-word,.wheather-word{
+    font-size: .6rem;;
+    color:#ffffff;
+}
+.icon-sun{
+    color:yellow;
+}
+.date{
+    color:#ccc;
+    font-size:0.5rem;
+}
+.week-word,.date,.wheather-img,.wheather-word{
+    margin:0;
+}
+
+.weather-about{
+    position: absolute;
+    bottom: 0;
+
+}
+/*.weather-about::before{*/
+    /*content: "+";*/
+    /*width:2rem;*/
+    /*height: 2rem;*/
+    /*background-color: green;*/
+    /*position: absolute;*/
+    /*margin-left:calc(50% - 2rem);*/
+    /*margin-top:-2rem ;*/
+    /*border-radius: 50%;*/
+    /*background-color:#bce8f1;*/
+    /*text-align: center;*/
+    /*line-height:2rem;*/
+    /*background-color:#cccccc;*/
+    /*font-size:2rem;*/
+    /*font-weight: bold;*/
+/*}*/
+/*列表*/
+.exponent_box{
+    height:auto;
+}
+.exponent_box:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.exponent{
+    display:none;
+}
+.exponent_img i{
+    font-size:25px;
+    color:#ffffff;
+}
+.exponent_list{
+    width:33.33%;
+    float:left;
+    text-align: center;
+    margin-top:1rem;
+}
+.exponent_name{
+    margin:0;
+    padding:0;
+    font-size:0.7rem;
+    color:#ffffff;
+}
+.exponent_massage{
+    font-size:0.6rem;
+    color:#C0BFB8;
+}
+/*折现图*/
+.line{
+    width:100%;
+    height:200px;
+}

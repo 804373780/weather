@@ -1,5 +1,5 @@
 window.onload = function () {
-
+    $(".line").hide();
     /*天气详情面板*/
     var wa = $("#weather-about");
     var exponent=$(".exponent");
@@ -12,12 +12,14 @@ window.onload = function () {
             exponent.hide();
             $("#canvas_zhexian").height(0);
             $("#canvas_zhexian").width(0);
+            $(".line").hide();
         } else {
             wa.animate({"height": "622px"})
             wa[0].dataset.flag = true;
             exponent.show();
             $("#canvas_zhexian").height($(".line").height());
             $("#canvas_zhexian").width($(".line").width());
+            $(".line").show();
         }
     });
 }
